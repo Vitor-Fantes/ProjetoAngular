@@ -1,27 +1,37 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.calendario{
+&__foto{
+background-image: url(https://images.pexels.com/photos/15985573/pexels-photo-15985573/free-photo-of-arquitetura-luz-do-dia-grama-colina.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 60vh;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+&__ano{
+  font-size: 1.6rem;
+  color: black;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+&__mes{
+font-size: 1.6rem;
+color: black;
 }
-
-#container a {
-  text-decoration: none;
+&__semana{
+  font-size: 1rem;
+  color: #025951
+}
+&__dia{
+  font-size: 1rem;
+  color: #038C3E;
+}
+}
+.linha{
+  background: rgb(201,147,7);
+background: linear-gradient(90deg, rgba(201,147,7,1) 2%, rgba(185,6,6,1) 46%, rgba(115,30,2,1) 68%);
+&__semana{
+  background: rgb(201,147,7);
+  background: linear-gradient(90deg, rgba(201,147,7,1) 2%, rgba(185,6,6,1) 46%, rgba(115,30,2,1) 68%);
+}
+&__dia{
+  background: rgb(201,147,7);
+  background: linear-gradient(90deg, rgba(201,147,7,1) 2%, rgba(185,6,6,1) 46%, rgba(115,30,2,1) 68%);
+}
 }
